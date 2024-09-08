@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",  // This tells Next.js that the root directory is the base
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"]  // This maps the alias @/ to the root of the project
     }
-  }
+  },
+  "include": ["**/*.js", "**/*.jsx"]  // Include all JS and JSX files for compilation
 }
