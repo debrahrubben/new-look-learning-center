@@ -203,11 +203,24 @@ and beyond through exceeding good practices.
                     <span>info@example.edu</span>
                   </div>
                 </div>
+                <a href="https://maps.app.goo.gl/svusbVb61geWUyJX7"><Button size="lg">Google Map Location</Button></a>
               </div>
             </div>
           </div>
         </section>
+<section>
+<iframe 
+  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fphoto%2F%3Ffbid%3D701823559942760%26set%3Da.701810123277437&show_text=true&width=500" 
+  width="100%" 
+  height="400" 
+  style={{ border: 'none', overflow: 'hidden' }} 
+  scrolling="no" 
+  frameBorder="0" 
+  allowFullScreen={true} 
+  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+/>
 
+</section>
 
         {/* Donation Section */}
         <section className="py-16">
