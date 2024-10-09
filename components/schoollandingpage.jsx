@@ -2,8 +2,7 @@
 
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { MapPin, Phone, Mail, Facebook } from 'lucide-react'
 
 export function SchoolLandingPageJsx() {
   return (
@@ -33,7 +32,7 @@ export function SchoolLandingPageJsx() {
   <div className="container mx-auto px-4 text-center relative z-10">
     <h2 className="text-4xl font-bold mb-4 text-black">Welcome to New Look Learning Centre</h2>
     <p className="text-xl mb-8 text-rose-900">Nurturing young minds for a brighter future</p>
-    <Button size="lg">Learn More</Button>
+    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwin97qt94CJAxVBZ0EAHSJmA4EQFnoECC8QAQ&url=https%3A%2F%2Fwww.facebook.com%2Fp%2FNew-Look-Learning-CentreKumasiGhana-100081133550388%2F&usg=AOvVaw35rCB-5GW8VZ-tRuSLmU7V&opi=89978449"><Button size="lg">Learn More</Button></a>
   </div>
 </section>
 
@@ -143,27 +142,71 @@ and beyond through exceeding good practices.
 </section>
 
 
-      {/* Contact Section */}
+{/* Contact Section */}
 <section className="bg-muted py-16">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold mb-8 text-center text-rose-900">Contact Us</h2>
-    <div className="max-w-md mx-auto text-center">
-      <p className="mb-4">For inquiries, please reach out to us:</p>
-      <p className="mb-2">
-        <span className="font-semibold">Email:</span> 
-        <a href="mailto:school@example.com" className="text-blue-600 underline"> school@example.com</a> {/* Replace with actual email */}
-      </p>
-      <p className="mb-2">
-        <span className="font-semibold">Phone:</span> 
-        <a href="tel:+233261316974" className="text-blue-600 underline"> +233 26 131 6974</a> {/* Replace with actual phone number */}
-      </p>
-      <p className="mb-2">
-        <span className="font-semibold">Follow us on Facebook:</span> 
-        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline"> Facebook Page</a> {/* Replace with actual Facebook link */}
-      </p>
+    <div className="max-w-md mx-auto text-center bg-white p-6 rounded-lg shadow-lg">
+      <p className="mb-4 text-gray-700">For inquiries, please reach out to us:</p>
+      
+      <div className="flex items-center justify-center mb-4">
+        <Mail className="w-6 h-6 text-rose-900 mr-2" />
+        <span className="font-semibold text-gray-800">Email:</span> 
+        <a href="mailto:school@example.com" className="text-yellow-500 underline ml-1"> school@example.com</a>
+      </div>
+      
+      <div className="flex items-center justify-center mb-4">
+        <Phone className="w-6 h-6 text-rose-900 mr-2" />
+        <span className="font-semibold text-gray-800">Phone:</span> 
+        <a href="tel:+233261316974" className="text-yellow-500 underline ml-1"> +233 26 131 6974</a>
+      </div>
+
+      <div className="flex items-center justify-center">
+        <Facebook className="w-6 h-6 text-rose-900 mr-2" />
+        <span className="font-semibold text-gray-800">Follow us on Facebook:</span> 
+        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className="text-yellow-500 underline ml-1"> Facebook Page</a>
+      </div>
     </div>
   </div>
 </section>
+ {/* Location Section */}
+ <section className="py-16 bg-muted">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-8 text-center">Our Location</h2>
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <Image 
+                  src="https://res.cloudinary.com/dgpxvazru/image/upload/v1728477422/NewLearningCentre/462231162_7216708308454220_2250022867100550575_n_izr7ey.jpg" 
+                  alt="School Location Map" 
+                  width={600} 
+                  height={400} 
+                  className="rounded-lg"
+                />
+              </div>
+              <div className="md:w-1/2 space-y-4">
+                <h3 className="text-2xl font-semibold">Visit New Look Learning Centre</h3>
+                <p className="text-lg">
+                  We are conveniently located in the heart of our community, 
+                  easily accessible by public transportation and with ample parking for visitors.
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="text-primary" />
+                    <span>New Apatrapa-Tanoso (Opposite Yaa Asantewaa SHS, Main gate)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Phone className="text-primary" />
+                    <span>0243326860</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Mail className="text-primary" />
+                    <span>info@example.edu</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
         {/* Donation Section */}
