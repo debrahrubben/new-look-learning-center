@@ -1,4 +1,4 @@
-import { SchoolLandingPageJsx } from "../components/SchoolLandingPage";
+import { SchoolLandingPageJsx } from '@/components/schoollandingpage';
 
 
 export default function Home() {
