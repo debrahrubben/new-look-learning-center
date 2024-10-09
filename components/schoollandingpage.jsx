@@ -8,20 +8,35 @@ import { Textarea } from "@/components/ui/textarea"
 export function SchoolLandingPageJsx() {
   return (
     (<div className="flex flex-col min-h-screen">
-      <header className="bg-pink-700 text-primary-foreground py-4">
-        <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold text-yellow-500">New Look Learning Centre</h1>
-        </div>
-      </header>
+     <header className="bg-rose-900 text-primary-foreground py-4">
+  <div className="container mx-auto px-4 flex items-center">
+    {/* Add your image link here */}
+    <Image
+      src="https://res.cloudinary.com/dgpxvazru/image/upload/v1728473328/NewLearningCentre/301963757_152145060833278_4864325761069910268_n_srcn0g.jpg" // Replace with your image URL
+      alt="Logo" // Add an appropriate alt text
+      width={50} // Set the desired width
+      height={50} // Set the desired height
+      className="mr-4" // Optional: margin to the right
+    />
+    <h1 className="text-3xl font-bold">New Look Learning Centre</h1>
+  </div>
+</header>
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-purple-700 py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-4 text-white">Welcome to New Look Learning Centre</h2>
-            <p className="text-xl mb-8">Nurturing young minds for a brighter future</p>
-            <Button size="lg">Learn More</Button>
-          </div>
-        </section>
+        <section className="relative py-20">
+  <div
+    className="absolute inset-0 bg-cover bg-center blur-sm"
+    style={{
+      backgroundImage: `url('https://res.cloudinary.com/dgpxvazru/image/upload/v1728471778/NewLearningCentre/2022-06-20_j9pnqh.jpg')`, // Replace with your external image URL
+    }}
+  ></div>
+  <div className="container mx-auto px-4 text-center relative z-10">
+    <h2 className="text-4xl font-bold mb-4 text-white">Welcome to New Look Learning Centre</h2>
+    <p className="text-xl mb-8">Nurturing young minds for a brighter future</p>
+    <Button size="lg">Learn More</Button>
+  </div>
+</section>
+
 
         {/* History Section */}
         <section className="py-16">
