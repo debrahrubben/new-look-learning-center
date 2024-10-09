@@ -8,16 +8,16 @@ import { Textarea } from "@/components/ui/textarea"
 export function SchoolLandingPageJsx() {
   return (
     (<div className="flex flex-col min-h-screen">
-      <header className="bg-primary text-primary-foreground py-4">
+      <header className="bg-pink-700 text-primary-foreground py-4">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold">Sunshine Elementary School</h1>
+          <h1 className="text-3xl font-bold text-yellow-500">New Look Learning Centre</h1>
         </div>
       </header>
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="bg-muted py-20">
+        <section className="bg-purple-700 py-20">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-4">Welcome to Sunshine Elementary</h2>
+            <h2 className="text-4xl font-bold mb-4 text-white">Welcome to New Look Learning Centre</h2>
             <p className="text-xl mb-8">Nurturing young minds for a brighter future</p>
             <Button size="lg">Learn More</Button>
           </div>
@@ -26,11 +26,11 @@ export function SchoolLandingPageJsx() {
         {/* History Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">Our History</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Our Mission</h2>
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
                 <Image
-                  src="/placeholder.svg?height=300&width=400"
+                  src={`https://res.cloudinary.com/dgpxvazru/image/upload/v1728471778/NewLearningCentre/2022-06-20_j9pnqh.jpg`}
                   alt="School in the past"
                   width={400}
                   height={300}
@@ -38,9 +38,11 @@ export function SchoolLandingPageJsx() {
               </div>
               <div className="md:w-1/2">
                 <p className="text-lg">
-                  Founded in 1950, Sunshine Elementary has been a cornerstone of our community for over 70 years. 
-                  What started as a small schoolhouse has grown into a vibrant learning center, 
-                  dedicated to providing quality education to generations of students.
+                At New Look Learning Centre (NLLC) our efforts are
+geared towards the provision of a holistic education
+in a conducive. academic , excellent and healthy
+envronment for pre-school children in Kkumas., Ghana
+and beyond through exceeding good practices.
                 </p>
               </div>
             </div>
@@ -68,23 +70,63 @@ export function SchoolLandingPageJsx() {
           </div>
         </section>
 
-        {/* Image Gallery Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">Life at Sunshine Elementary</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <Image
-                  key={i}
-                  src={`/placeholder.svg?height=200&width=300&text=School Image ${i}`}
-                  alt={`School life ${i}`}
-                  width={300}
-                  height={200}
-                  className="rounded-lg" />
-              ))}
-            </div>
-          </div>
-        </section>
+       {/* Image Gallery Section */}
+<section className="py-16">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-8 text-center">Life at New Look Learning Centre</h2>
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <Image
+        key={1}
+        src="https://res.cloudinary.com/dgpxvazru/image/upload/v1728471776/NewLearningCentre/13087176_764550730349218_7557037124048375724_o_inplqp.jpg" // Replace with actual image URL
+        alt="School life 1"
+        width={300}
+        height={200}
+        className="rounded-lg"
+      />
+      <Image
+        key={2}
+        src="https://res.cloudinary.com/dgpxvazru/image/upload/v1728471776/NewLearningCentre/2023-03-01_rlyx3f.jpg" // Replace with actual image URL
+        alt="School life 2"
+        width={300}
+        height={200}
+        className="rounded-lg"
+      />
+      <Image
+        key={3}
+        src="https://res.cloudinary.com/dgpxvazru/image/upload/v1728471776/NewLearningCentre/2023-03-01_rlyx3f.jpg" // Replace with actual image URL
+        alt="School life 3"
+        width={300}
+        height={200}
+        className="rounded-lg"
+      />
+      <Image
+        key={4}
+        src="https://res.cloudinary.com/dgpxvazru/image/upload/v1728471776/NewLearningCentre/13130838_764997180304573_9203797842721464014_o_msyigs.jpg" // Replace with actual image URL
+        alt="School life 4"
+        width={300}
+        height={200}
+        className="rounded-lg"
+      />
+      <Image
+        key={5}
+        src="https://res.cloudinary.com/dgpxvazru/image/upload/v1728471776/NewLearningCentre/13528459_791350367669254_6634386096447834101_o_kqj1pc.jpg" // Replace with actual image URL
+        alt="School life 5"
+        width={300}
+        height={200}
+        className="rounded-lg"
+      />
+      <Image
+        key={6}
+        src="https://res.cloudinary.com/dgpxvazru/image/upload/v1728471776/NewLearningCentre/13495455_791350497669241_6032786592645199592_o_udabca.jpg" // Replace with actual image URL
+        alt="School life 6"
+        width={300}
+        height={200}
+        className="rounded-lg"
+      />
+    </div>
+  </div>
+</section>
+
 
         {/* Contact Section */}
         <section className="bg-muted py-16">
@@ -112,7 +154,7 @@ export function SchoolLandingPageJsx() {
       </main>
       <footer className="bg-primary text-primary-foreground py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Sunshine Elementary School. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} New Look Learning Centre. All rights reserved.</p>
         </div>
       </footer>
     </div>)
