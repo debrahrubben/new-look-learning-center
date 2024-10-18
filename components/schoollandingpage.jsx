@@ -20,21 +20,37 @@ export function SchoolLandingPageJsx() {
     <h1 className="text-3xl font-bold">New Look Learning Centre</h1>
   </div>
 </header>
-      <main className="flex-grow">
+<main className="flex-grow">
         {/* Hero Section */}
         <section className="relative py-20">
+  {/* Background image with a stronger blur effect */}
   <div
-    className="absolute inset-0 bg-cover bg-center blur-sm"
+    className="absolute inset-0 bg-cover bg-center"
     style={{
-      backgroundImage: `url('https://res.cloudinary.com/dgpxvazru/image/upload/v1728471778/NewLearningCentre/2022-06-20_j9pnqh.jpg')`, // Replace with your external image URL
+      backgroundImage: `url('https://res.cloudinary.com/dgpxvazru/image/upload/v1728471778/NewLearningCentre/2022-06-20_j9pnqh.jpg')`, 
     }}
   ></div>
+
+  {/* Glassmorphism effect on the overlay */}
+  <div className="absolute inset-0 bg-white/1 backdrop-blur-md border border-white/20 rounded-lg"></div>
+
+  {/* Content container */}
   <div className="container mx-auto px-4 text-center relative z-10">
     <h2 className="text-4xl font-bold mb-4 text-black">Welcome to New Look Learning Centre</h2>
     <p className="text-xl mb-8 text-rose-900">Nurturing young minds for a brighter future</p>
-    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwin97qt94CJAxVBZ0EAHSJmA4EQFnoECC8QAQ&url=https%3A%2F%2Fwww.facebook.com%2Fp%2FNew-Look-Learning-CentreKumasiGhana-100081133550388%2F&usg=AOvVaw35rCB-5GW8VZ-tRuSLmU7V&opi=89978449"><Button size="lg">Learn More</Button></a>
+
+    {/* Animated button */}
+    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwin97qt94CJAxVBZ0EAHSJmA4EQFnoECC8QAQ&url=https%3A%2F%2Fwww.facebook.com%2Fp%2FNew-Look-Learning-CentreKumasiGhana-100081133550388%2F&usg=AOvVaw35rCB-5GW8VZ-tRuSLmU7V&opi=89978449">
+      <Button 
+        size="lg" 
+        className="transition-transform duration-300 hover:scale-105 shadow-lg transform hover:bg-rose-700"
+      >
+        Learn More
+      </Button>
+    </a>
   </div>
 </section>
+
 
 
         {/* History Section */}
