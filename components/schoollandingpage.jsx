@@ -72,7 +72,7 @@ export function SchoolLandingPageJsx() {
                 At New Look Learning Centre (NLLC) our efforts are
 geared towards the provision of a holistic education
 in a conducive. academic , excellent and healthy
-envronment for pre-school children in Kumasi, Ghana.
+envronment for pre-school children in Kumasi in the ashanti region of Ghana
 and beyond through exceeding good practices.
                 </p>
               </div>
