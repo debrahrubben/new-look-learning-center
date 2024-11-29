@@ -87,7 +87,7 @@ and beyond through exceeding good practices.
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-background p-6 rounded-lg shadow">
                 <h3 className="text-xl font-semibold mb-4 text-yellow-500">Foster Curiosity</h3>
-                <p>We aim to nurture a love for learning and encourage students to explore the world around them.</p>
+                <p>We aim to nurture a love for learning and encourage students to explore the world around them by providing a holistic education bearing in mind christian principles.</p>
               </div>
               <div className="bg-background p-6 rounded-lg shadow">
                 <h3 className="text-xl font-semibold mb-4 text-yellow-500">Develop Skills</h3>
