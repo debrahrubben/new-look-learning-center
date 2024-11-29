@@ -87,15 +87,15 @@ and beyond through exceeding good practices.
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-background p-6 rounded-lg shadow">
                 <h3 className="text-xl font-semibold mb-4 text-yellow-500">Foster Curiosity</h3>
-                <p>We aim to nurture a love for learning and encourage students to explore the world around them by providing a holistic education bearing in mind christian principles.</p>
+                <p>We aim at nurturing the love for learning and encouraging students to explore the world around them .</p>
               </div>
               <div className="bg-background p-6 rounded-lg shadow">
                 <h3 className="text-xl font-semibold mb-4 text-yellow-500">Develop Skills</h3>
-                <p>Our objective is to help students develop essential academic and life skills for future success.</p>
+                <p>We also aim at helping students to develop essential academic and life skills for future success.</p>
               </div>
               <div className="bg-background p-6 rounded-lg shadow">
                 <h3 className="text-xl font-semibold mb-4 text-yellow-500">Build Character</h3>
-                <p>We strive to instill values of kindness, respect, and responsibility in our students.</p>
+                <p>We providing a holistic education bearing in mind christian principles that would help students develop effective moral values including, kindness, respect, honesty, loyalty, and responsibility in our students.</p>
               </div>
             </div>
           </div>
@@ -169,13 +169,13 @@ and beyond through exceeding good practices.
       <div className="flex items-center justify-center mb-4">
         <Mail className="w-6 h-6 text-rose-900 mr-2" />
         <span className="font-semibold text-gray-800">Email:</span> 
-        <a href="mailto:school@example.com" className="text-yellow-500 underline ml-1"> school@example.com</a>
+        <a href="mailto:ewurabar@gmail.com" className="text-yellow-500 underline ml-1"> ewurabar@gmail.com</a>
       </div>
       
       <div className="flex items-center justify-center mb-4">
         <Phone className="w-6 h-6 text-rose-900 mr-2" />
         <span className="font-semibold text-gray-800">Phone:</span> 
-        <a href="tel:+233261316974" className="text-yellow-500 underline ml-1"> +233 26 131 6974</a>
+        <a href="tel:+233243326860" className="text-yellow-500 underline ml-1"> +233 24 332 6860</a>
       </div>
 
       <div className="flex items-center justify-center">
